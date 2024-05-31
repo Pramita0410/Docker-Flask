@@ -1,0 +1,8 @@
+- To see all images: `sudo docker images`
+- To run a image and go inside that container: `sudo docker run -it <image_name>`
+- To go inside a running container: `sudo docker exec -it <container_id>`
+- To see all running containers: `sudo docker ps` or `sudo docker container ls`
+- To see all running and stopped containers: `sudo docker ps -a` or `sudo docker container ls -a`
+- To start a exited container: `sudo docker start <container_id>`
+- To stop a container: `sudo docker stop <container_id>`
+- To run a command on a running container without going inside it: `sudo docker exec <container_id> ls -ltr`
