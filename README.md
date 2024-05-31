@@ -6,5 +6,5 @@
 - To start a exited container: `sudo docker start <container_id>`
 - To stop a container: `sudo docker stop <container_id>`
 - To run a command on a running container without going inside it: `sudo docker exec <container_id> ls -ltr`
-- To build docker image:  sudo docker build -t flask-image .
-- To run the app: sudo docker run -it  -p 3300:5000 -e FLASK_APP=/prami/flask/app.py flask-image (Here -e is setting the environment variable and -p is mapping the ports, 5000 is container port and 3300 is your local machine's port)
+- To build docker image:  `sudo docker build -t flask-image .` 
+- To run the app: `sudo docker run -it  -p 3300:5000 -e FLASK_APP=/prami/flask/app.py flask-image` (Here -e is setting the environment variable and -p is mapping the ports, 5000 is container port and 3300 is your local machine's port)
